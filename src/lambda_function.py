@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import sys
 import logging
 import pymysql
-import dbinfo
+import os
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
