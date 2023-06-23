@@ -32,9 +32,9 @@ jobs:
         aws_region: ap-northeast-2
         function_name: crawling
         zip_file: function.zip
-        environment: |
-          DB_HOST=${{ secrets.DB_HOST }}
-          DB_USERNAME=${{ secrets.DB_USERNAME }}
-          DB_PASSWORD=${{ secrets.DB_PASSWORD }}
-          DB_NAME=${{ secrets.DB_NAME }}
+        environment:
+          DB_HOST=${{ secrets.DB_HOST }},
+          DB_USERNAME=${{ secrets.DB_USERNAME }},
+          DB_PASSWORD=${{ secrets.DB_PASSWORD }},
+          DB_NAME=${{ secrets.DB_NAME }},
           DB_PORT=${{ secrets.DB_PORT }}
