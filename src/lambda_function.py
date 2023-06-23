@@ -74,6 +74,6 @@ def crawling(url):
             logger.info(row)
         conn.commit()
 
-    return title + price
+    return '123'
 
     
